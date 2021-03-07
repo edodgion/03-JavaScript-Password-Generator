@@ -28,8 +28,8 @@ https://edodgion.github.io/03-JavaScript-Password-Generator/
 ## Screen Shots
 ![](./assets/images/generate1.png)
 ![](./assets/images/generate2.png)
-![](./assets/images/generatecode.png)
-![](./assets/images/generatecode2.png)
+![](./assets/images/generateCode.png)
+![](./assets/images/generateCode2.png)
 
 ## Credit
 This page was made with ❤️  by Eric Dodgion 03/05/2021
