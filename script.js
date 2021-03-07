@@ -12,31 +12,33 @@ function  generatePassword() {
 
   var passwordLength = (window.prompt("Enter your desired password length between 8 and 128"));
   if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) { 
-    //Gives a 'Invalid Entry' alert if cancel was 'clicked' sends a '0' messege in text box
+    //Gives a 'Invalid Entry' alert if cancel was 'clicked'
     window.alert('Invalid Entry')
     return passwordLength;
   }
+  
+  //contains all of the arrays "[]"
   var options = [];
 
-   //confirm for lowercase
+   //confirm for lowercase, concat radomizes the lowecase array from the options variable
    var userLowerCase = window.confirm("Click 'OK' if you would you like lowercase characters?");
    if (userLowerCase == true) {
      options = options.concat(lowercaseArray)
    }
-    //confirm for UPPERCASE
+    //confirm for UPPERCASE, concat radomizes the uppercase array from the options variable
      var userUpperCase = window.confirm("Click 'OK' if you would you like UPPERCASE characters?");
    if (userUpperCase == true) {
      options = options.concat(uppercaseArray)
     
    }
    
-   //confirm for Numeric
+   //confirm for Numeric, concat radomizes the numeric array from the options variable
    var userNumericCharacter = window.confirm("Click 'OK' if you would you like Numeric characters?");
    if (userNumericCharacter == true) {
      options = options.concat(numberArray)
    }
 
-    //confirm for Special Charaters
+    //confirm for Special Charaters, concat radomizes the special characters array from the options variable
      var userSpecialCharacter = window.confirm("Click 'OK' if you would you like Special Characters characters?");
    if (userSpecialCharacter == true) {
     options = options.concat(specialArray)
@@ -58,7 +60,7 @@ function  generatePassword() {
 
   return password
 }
-
+//Add event listener tells it to 'write the password' after the generate button is clicked
 generateBtn.addEventListener('click', writePassword);
 
  //Display results in textbox
